@@ -1,7 +1,6 @@
 package pl.rozwalka.coderbyte.codeland.username.validation;
 
 import java.util.Scanner;
-import java.util.regex.Pattern;
 
 class Main {
 
@@ -10,7 +9,7 @@ class Main {
         if (str.length() < 4 || str.length() > 25) {
             return "false";
         }
-        if (!Pattern.compile("^[A-z]").matcher(str).find()) {
+        if (!Character.isLetter(str.charAt(0))) {
             return "false";
         }
         if (str.endsWith("_")) {
