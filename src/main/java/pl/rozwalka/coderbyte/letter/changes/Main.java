@@ -16,11 +16,9 @@ class Main {
                 c = 'a';
             } else if (c >= 'a' && c <= 'z') {
                 c++;
-                if (c == 'a') c = 'A';
-                if (c == 'e') c = 'E';
-                if (c == 'i') c = 'I';
-                if (c == 'o') c = 'O';
-                if (c == 'u') c = 'U';
+                if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'){
+                    c = Character.toUpperCase(c);
+                }
             }
             sb.append(c);
         }
