@@ -6,10 +6,10 @@ class Main {
 
     public static boolean Palindrome(String str) {
 
-        String s = str.trim().toLowerCase();
-        StringBuilder sb = new StringBuilder(s).reverse();
+        str = str.trim().toLowerCase();
+        var sb = new StringBuilder(str).reverse();
 
-        return s.contains(sb);
+        return str.contains(sb);
     }
 
     public static void main(String[] args) {
