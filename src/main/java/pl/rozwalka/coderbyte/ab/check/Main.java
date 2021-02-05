@@ -1,5 +1,11 @@
 package pl.rozwalka.coderbyte.ab.check;
 
+/*Using the Java language, have the function ABCheck(str)
+take the str parameter being passed and return the string true if the characters
+a and b are separated by exactly 3 places anywhere in the string at least once (ie. "lane borrowed"
+would result in true because there is exactly three characters between a and b).
+Otherwise return the string false. */
+
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
@@ -15,7 +21,7 @@ class Main {
         boolean matcher1 = compile1.matcher(str).find();
         boolean matcher2 = compile2.matcher(str).find();
 
-        if (matcher1 || matcher2){
+        if (matcher1 || matcher2) {
             return true;
         }
 
