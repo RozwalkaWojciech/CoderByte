@@ -9,8 +9,6 @@ package pl.rozwalka.coderbyte.codeland.username.validation;
    If the username is valid then your program should return the string true, otherwise return the string false.
 */
 
-import java.util.Scanner;
-
 class Main {
 
     public static String CodelandUsernameValidation(String str) {
@@ -24,15 +22,18 @@ class Main {
         if (str.endsWith("_")) {
             return "false";
         }
-        if (!str.matches("^[a-zA-Z0-9_]+")) {
+        if (!str.matches("[\\w]+")) {
             return "false";
         }
         return "true";
     }
 
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
-        System.out.print(CodelandUsernameValidation(s.nextLine()));
+        System.out.println(CodelandUsernameValidation("asd_sd_s09d"));
+        System.out.println(CodelandUsernameValidation("asd_sd_sd_"));
+        System.out.println(CodelandUsernameValidation("asd_sd_sd_9"));
+        System.out.println(CodelandUsernameValidation("asd_sd!_sd_9"));
+        System.out.println(CodelandUsernameValidation("a@#$%^&*("));
     }
 
 }
