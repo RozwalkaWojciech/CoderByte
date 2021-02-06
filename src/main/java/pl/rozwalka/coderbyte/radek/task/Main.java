@@ -1,6 +1,6 @@
 package pl.rozwalka.coderbyte.radek.task;
 
-import java.util.Scanner;
+/*RADEK'S Task input = aabbbccddgghhhh  output = 2a3b2c2d2g4h*/
 
 class Main {
 
@@ -23,7 +23,6 @@ class Main {
     }
 
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
-        System.out.println(string(s.nextLine()));
+        System.out.println(string("aabbbccddgghhhh"));
     }
 }
