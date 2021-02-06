@@ -1,5 +1,9 @@
 package pl.rozwalka.coderbyte.findintersection;
 
+/* Return a string of numbers that occur in both strings in sorted order. If
+ * there is no intersection, return the string "false".
+ */
+
 import java.util.Scanner;
 
 class Main {
