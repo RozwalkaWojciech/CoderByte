@@ -1,5 +1,9 @@
 package pl.rozwalka.coderbyte.anagram;
 
+/*
+word formed from another by rearranging its letters: “Angel” is an anagram of “glean”
+*/
+
 import java.util.Arrays;
 
 class Main {
