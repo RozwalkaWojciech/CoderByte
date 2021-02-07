@@ -14,7 +14,7 @@ class Main {
         char[] arr = str.toCharArray();
         Arrays.sort(arr);
 
-        return String.copyValueOf(arr);
+        return String.valueOf(arr);
     }
 
     public static void main(String[] args) {
