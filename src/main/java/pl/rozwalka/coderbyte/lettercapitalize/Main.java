@@ -15,15 +15,12 @@ class Main {
 
     public static String LetterCapitalize(String str) {
 
-        String result = "";
-        String[] arr = str.split(" ");
+        var sb = new StringBuilder();
 
-        for (String word : arr) {
-
-            result += word.substring(0, 1).toUpperCase() + word.substring(1) + " ";
+        for (String word : str.split(" ")) {
+            sb.append(word.substring(0, 1).toUpperCase()).append(word.substring(1)).append(" ");
         }
-
-        return result;
+        return sb.toString();
     }
 
     public static void main(String[] args) {
