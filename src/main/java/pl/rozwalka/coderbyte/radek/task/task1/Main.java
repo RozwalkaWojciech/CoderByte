@@ -1,10 +1,10 @@
-package pl.rozwalka.coderbyte.radek.task;
+package pl.rozwalka.coderbyte.radek.task.task1;
 
 /*RADEK'S Task input = aabbbccddgghhhh  output = 2a3b2c2d2g4h*/
 
 class Main {
 
-    public static String string(String str) {
+    public static String task1(String str) {
 
         char[] chars = str.toCharArray();
         int count = 1;
@@ -23,6 +23,6 @@ class Main {
     }
 
     public static void main(String[] args) {
-        System.out.println(string("aabbbccddgghhhh"));
+        System.out.println(task1("aabbbccddgghhhh"));
     }
 }
