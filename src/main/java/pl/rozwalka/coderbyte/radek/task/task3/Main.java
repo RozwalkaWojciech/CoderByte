@@ -2,13 +2,15 @@ package pl.rozwalka.coderbyte.radek.task.task3;
 
 /*ArrayChallenge*/
 
-import java.util.Arrays;
-import java.util.Objects;
+import java.util.ArrayList;
+import java.util.List;
 
 class Main {
 
     public static int task3(int[] arr) {
+
         int count = 0;
+        List<Integer> arrCopy = new ArrayList<>();
 
         if (arr.length - 1 == arr[0]) {
             return count;
@@ -17,27 +19,26 @@ class Main {
             return 1 + ((arr[0] / 2) - 1) * 3;
         }
 
-        int[] arrCopy = new int[arr.length - 1];
-        for (int i = 0; i < arrCopy.length; i++) {
-            arrCopy[i] = arr[i + 1];
+        for (int i = 1; i < arr.length; i++) {
+            arrCopy.add(arr[i]);
         }
 
         for (int i = 1; i <= arr[0]; i++) {
-            if (Objects.equals(arrCopy, i)) {
+            if (arrCopy.contains(i)) {
                 continue;
             } else {
-                if (i % 2 != 0 && !Objects.equals(arrCopy, i + 1)) {
+                if (i % 2 != 0 && !arrCopy.contains(i + 1)) {
                     count++;
                 }
-                if (i > 2 && !Objects.equals(arrCopy, i - 2)) {
+                if (i % 2 != 0 && !arrCopy.contains(i + 2) && i < arr[0] - 2) {
                     count++;
                 }
-                if (i < arr[0] - 2 && !Arrays.asList(arrCopy).contains(i + 2)) {
+                if (i % 2 == 0 && !arrCopy.contains(i + 2) && i != arr[0]) {
                     count++;
                 }
             }
         }
-        return count - 2;
+        return count;
     }
 
     public static void main(String[] args) {
