@@ -22,8 +22,8 @@ class Main {
                     return "not possible";
                 }
                 sb = new StringBuilder(str);
-                result = String.valueOf(str.charAt(i) + String.valueOf(str.charAt(i + 1)));
-                sb.delete(i, i + 1);
+                result = str.charAt(i) + String.valueOf(str.charAt(i + 1));
+                sb.delete(i, i + 2);
 
                 revSb = new StringBuilder(sb).reverse();
                 if (revSb.toString().equals(sb.toString())) {
@@ -36,5 +36,10 @@ class Main {
 
     public static void main(String[] args) {
         System.out.println(task2("jkklkkj"));
+        System.out.println(task2("aabbdfbbaa"));
+        System.out.println(task2("qqwrssrhwqq"));
+        System.out.println(task2("oppog"));
+        System.out.println(task2("qwerty"));
+        System.out.println(task2("qrstq"));
     }
 }
