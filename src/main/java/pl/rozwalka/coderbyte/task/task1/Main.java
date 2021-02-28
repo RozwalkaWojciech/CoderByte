@@ -1,4 +1,4 @@
-package pl.rozwalka.coderbyte.radek.task.task1;
+package pl.rozwalka.coderbyte.task.task1;
 
 /*RADEK'S Task input = aabbbccddgghhhh  output = 2a3b2c2d2g4h*/
 

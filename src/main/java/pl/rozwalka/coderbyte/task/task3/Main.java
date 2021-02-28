@@ -1,4 +1,4 @@
-package pl.rozwalka.coderbyte.radek.task.task3;
+package pl.rozwalka.coderbyte.task.task3;
 
 /*ArrayChallenge*/
 

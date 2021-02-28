@@ -1,4 +1,4 @@
-package pl.rozwalka.coderbyte.radek.task.task2;
+package pl.rozwalka.coderbyte.task.task2;
 
 class Main {
 
